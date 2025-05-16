@@ -58,7 +58,7 @@ app.get('/api/products', async (req, res) => {
 // Serve React static files from build folder
 app.use(express.static(path.join(__dirname, '../client/build')));
 
-// For any other routes, serve React index.html (for client-side routing)
+// For any other routes, serve React index.html (for c
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
